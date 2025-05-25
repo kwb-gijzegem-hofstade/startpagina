@@ -443,6 +443,35 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 `;
 
+
+//Wegbeschrijving (gebruik van leaflet)
+/* 
+    const wegbeschrijvingBtnInhoud = `
+<section class="location-section">
+  <p class="section-title"><strong>Kaarten en adresgegevens</strong></p>
+  <hr class="section-divider">
+
+  <div class="location-block">
+    <p><span class="location-label">Ontmoetingscentrum</span><font size="4" class="address-text">
+      <span class="location-name">De Looierij</span><br>
+      <span class="address-line">Dekkersweg 4</span><br>
+      <span class="address-line">9308 Gijzegem</span></font>
+    </p>
+    <div id="map1" class="map-frame" style="width:425px; height:350px;"></div>
+  </div>
+
+  <div class="location-block">
+    <p class="address-block">
+      <span class="location-name">Sporthal Sint-Vincentiusinstituut</span><br>
+      <span class="address-line">Kruisstraat</span><br>
+      <span class="address-line">9308 Gijzegem</span>
+    </p>
+    <div id="map2" class="map-frame" style="width:425px; height:350px;"></div>
+  </div>
+</section>
+`;
+*/
+
     const wegbeschrijvingBtnInhoud = `
 <section class="location-section">
   <p class="section-title"><strong>Kaarten en adresgegevens</strong></p>
@@ -578,6 +607,43 @@ document.addEventListener('DOMContentLoaded', () => {
 `;
 
 
+    // Functie om inhoud te laden (gebruik van leaflet)
+    /*
+    async function laadInhoud(html) {
+        main.innerHTML = html;
+
+        // Functie om een adres te geocoderen
+        async function toonKaart(id, adres, popupTekst) {
+            const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(adres)}`);
+            const data = await response.json();
+
+            if (data.length > 0) {
+                const lat = data[0].lat;
+                const lon = data[0].lon;
+
+                const map = L.map(id).setView([lat, lon], 15);
+                L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+                L.marker([lat, lon]).addTo(map).bindPopup(popupTekst).openPopup();
+            } else {
+                document.getElementById(id).innerHTML = "<p style='color:red'>Adres niet gevonden.</p>";
+            }
+        }
+
+        // Kaarten tonen op basis van adres
+        if (document.getElementById('map1')) {
+            await toonKaart('map1', 'Dekkersweg 4, 9308 Gijzegem, België',
+                `<strong>Ontmoetingscentrum De Looierij</strong><br>Dekkersweg 4<br>9308 Gijzegem`);
+        }
+
+        if (document.getElementById('map2')) {
+            await toonKaart('map2', 'Kruisstraat, 9308 Gijzegem, België',
+                `<strong>Sporthal Sint-Vincentiusinstituut</strong><br>Kruisstraat<br>9308 Gijzegem`);
+        }
+    }
+    */
+
     // Functie om inhoud te laden
     function laadInhoud(html) {
         main.innerHTML = html;
@@ -608,49 +674,49 @@ document.addEventListener('DOMContentLoaded', () => {
     if (terugblikBtn) {
         terugblikBtn.addEventListener('click', () => laadInhoud(terugblikInhoud));
     } else {
-        console.error('Vorigekalender-knop niet gevonden');
+        console.error('Terugblik-knop niet gevonden');
     }
 
     if (volleybalBtn) {
         volleybalBtn.addEventListener('click', () => laadInhoud(volleybalInhoud));
     } else {
-        console.error('Vorigekalender-knop niet gevonden');
+        console.error('Volleybal-knop niet gevonden');
     }
 
     if (bestuurBtn) {
         bestuurBtn.addEventListener('click', () => laadInhoud(bestuurBtnInhoud));
     } else {
-        console.error('Vorigekalender-knop niet gevonden');
+        console.error('Bestuur-knop niet gevonden');
     }
 
     if (wegbeschrijvingBtn) {
         wegbeschrijvingBtn.addEventListener('click', () => laadInhoud(wegbeschrijvingBtnInhoud));
     } else {
-        console.error('Vorigekalender-knop niet gevonden');
+        console.error('Wegbeschrijving-knop niet gevonden');
     }
 
     if (fotoalbumBtn) {
         fotoalbumBtn.addEventListener('click', () => laadInhoud(fotoalbumBtnInhoud));
     } else {
-        console.error('Vorigekalender-knop niet gevonden');
+        console.error('Fotoalbum-knop niet gevonden');
     }
 
     if (vellekenBtn) {
         vellekenBtn.addEventListener('click', () => laadInhoud(vellekenBtnInhoud));
     } else {
-        console.error('Vorigekalender-knop niet gevonden');
+        console.error('\'t Velleken-knop niet gevonden');
     }
 
     if (linksBtn) {
         linksBtn.addEventListener('click', () => laadInhoud(linksBtnInhoud));
     } else {
-        console.error('Vorigekalender-knop niet gevonden');
+        console.error('Links-knop niet gevonden');
     }
 
     if (privacyBtn) {
         privacyBtn.addEventListener('click', () => laadInhoud(privacyBtnInhoud));
     } else {
-        console.error('Vorigekalender-knop niet gevonden');
+        console.error('Privacy-knop niet gevonden');
     }
 
 
@@ -663,6 +729,5 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         document.getElementById('Privacy-btn').click();
     });
-
 
 });
