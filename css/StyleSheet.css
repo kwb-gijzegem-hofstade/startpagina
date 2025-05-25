@@ -834,7 +834,7 @@ main.content .location-section {
     margin: 2rem 0; /* boven en onder ruimte, geen auto horizontaal */
     padding: 1.5rem;
     background-color: #f9f9f9;
-    border-radius: 0; /* optioneel: geen afgeronde hoeken als het breed is */
+    border-radius: 0; /* geen afgeronde hoeken als het breed is */
     font-family: Arial, sans-serif;
     color: #333;
 }
@@ -888,12 +888,28 @@ main.content .address-text {
     line-height: 1.4;
 }
 
+
+/* Aanpassing voor Leaflet map containers */
+/*
 main.content .map-frame {
-    display: block;
+    width: 425px;
+    height: 350px;
     margin-top: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+*/
+
+/* Optioneel: als je wilt dat de kaart responsive is, kun je dit gebruiken in plaats van vaste breedte/hoogte */
+main.content .map-frame {
+    width: 100%;
+    max-width: 425px;
+    height: 350px;
+    margin-top: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
 
 main.content .map-link {
     font-size: 0.9rem;
@@ -904,6 +920,7 @@ main.content .map-link {
     main.content .map-link:hover {
         text-decoration: underline;
     }
+
 
 /*************************************************************
  *                    FOTOALBUM                              *
