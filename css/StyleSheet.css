@@ -1,11 +1,28 @@
-﻿/* Kleuren */
-:root {
-    --bordeaux-donker: #9b1f48;
-    --bordeaux-medium: #c02b65;
-    --bordeaux-licht: #db7396;
-    --geel-licht: #e0d140;
-    --geel-zacht: #e6e29a;
+﻿:root {
+    --groen-donker: #16694f; /* donker appelblauwzeegroen */
+    --groen-donker2: #15481a;
+    --groen-medium: #29a37f; /* medium appelblauwzeegroen */
+    --groen-licht: #a4d9c9; /* licht appelblauwzeegroen */
+    --blauw-heel-licht: #f0f6fc;
+    --blauw-donker: #1b4965; /* donker blauw-grijs */
+    --blauw-donker-extra: #004080;
+    --blauw-medium: #3b7a9e; /* medium blauw */
+    --blauw-fris: #007acc;
+    --blauw-fris-midden: #005a9c;
+    --blauw-fris-donker: #005f99;
+    --blauw-fris-hover: #005ea3;
+    --paars-licht: #b497bd; /* licht paars blijft hetzelfde */
+    --paars-donker: #6a4c7b;
     --wit: #fff;
+    --zwart: #000000;
+    --licht-grijs: #f0f0f0;
+    --grijs-super-licht: #f9f9f9;
+    --grijs-lichter: #ccc;
+    --grijs-licht: #ddd;
+    --grijs-medium: #444444;
+    --grijs-medium-donker: #555555;
+    --grijs-donker: #333333; /* donkergrijs */
+    --licht-grijs-achtergrond: #fafafa; /* heel lichtgrijs achtergrond */
     --tekst-donker: #222;
     --header-height: 100px;
     --topnav-height: 70px;
@@ -20,7 +37,7 @@ body {
     margin: 0;
     padding-top: calc(var(--header-height) + var(--topnav-height));
     font-family: 'Poppins', sans-serif;
-    background: var(--geel-zacht);
+    background: var(--groen-licht);
     color: var(--tekst-donker);
     line-height: 1.6;
     overflow-y: scroll;
@@ -31,7 +48,7 @@ body {
 header {
     height: var(--header-height);
     width: 100%;
-    background-color: var(--bordeaux-donker);
+    background-color: var(--groen-donker);
     color: var(--wit);
     box-shadow: 0 4px 10px rgb(0 0 0 / 0.3);
     user-select: none;
@@ -65,7 +82,7 @@ header {
 
 /* Navigatiebalk onder header */
 .topnav {
-    background-color: var(--bordeaux-medium);
+    background-color: var(--groen-medium);
     height: var(--topnav-height);
     width: 100%;
     padding: 0.7rem 1rem;
@@ -96,8 +113,6 @@ header {
     flex-shrink: 0;
 }
 
-
-
 .topnav a:first-child {
     margin-left: 0; /* kan ook weggelaten worden */
 }
@@ -116,7 +131,7 @@ header {
     font-size: 0.95rem;
     padding: 0.4rem 0.8rem;
     border-radius: 8px;
-    background-color: rgba(80, 30, 40, 0.15); /* iets donkerder dan achtergrond */
+    background-color: rgba(27, 58, 130, 0.15); /* iets donkerder dan achtergrond */
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-flex;
     align-items: center;
@@ -132,11 +147,10 @@ header {
     .topnav button:hover,
     .topnav button:focus {
         background-color: var(--wit);
-        color: var(--bordeaux-donker);
-        border-color: var(--bordeaux-light);
+        color: var(--groen-donker);
+        border-color: var(--groen-licht);
         outline: none;
     }
-
 
 /* Container */
 .container {
@@ -151,12 +165,11 @@ header {
     overflow: visible; /* voorkom dat afgeronde hoeken afgekapt worden */
 }
 
-
-/* Sidebar met gele achtergrond */
+/* Sidebar met lichte groene achtergrond */
 aside.sidebar {
     height: 100%;
     width: 280px;
-    background: var(--geel-licht);
+    background: var(--groen-medium);
     padding: 2rem 1.8rem;
     padding-top: 1rem; /* ruimte boven de contentblokken */
     display: flex;
@@ -166,7 +179,7 @@ aside.sidebar {
     border-radius: 12px;
     font-weight: 600;
     font-size: 1.15rem;
-    color: var(--bordeaux-donker);
+    color: var(--groen-donker);
     user-select: none;
     overflow-wrap: break-word;
     overflow-y: auto; /* scroll intern */
@@ -178,13 +191,13 @@ aside.sidebar {
     width: 100%;
     border-radius: 14px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 2px rgba(74, 20, 29, 0.3));
+    filter: drop-shadow(0 2px 2px rgba(26, 94, 32, 0.3));
     transition: filter 0.3s ease;
 }
 
     .sidebar-logo:hover,
     .sidebar-logo:focus {
-        filter: drop-shadow(0 4px 6px rgba(74, 20, 29, 0.5));
+        filter: drop-shadow(0 4px 6px rgba(26, 94, 32, 0.5));
         cursor: pointer;
     }
 
@@ -197,10 +210,10 @@ aside.sidebar {
     .visitor-count img {
         height: 28px;
         object-fit: contain;
-        filter: drop-shadow(0 1px 1px rgba(74, 20, 29, 0.5));
+        filter: drop-shadow(0 1px 1px rgba(26, 94, 32, 0.5));
     }
 
-/* Content met minder donker bordeauxrode achtergrond */
+/* Content met witte achtergrond */
 main.content {
     flex: 1;
     height: 100%;
@@ -253,7 +266,7 @@ main.content {
 
         main.content a:hover,
         main.content a:focus {
-            border-color: var(--wit);
+            border-color: var(--groen-donker);
             outline: none;
             cursor: pointer;
         }
@@ -261,7 +274,7 @@ main.content {
     /* Scheidingslijn */
     main.content hr {
         border: none;
-        border-top: 3px solid var(--wit);
+        border-top: 3px solid var(--groen-donker);
         width: 80px;
         margin-left: 0;
         margin-bottom: 2rem;
@@ -290,7 +303,7 @@ main.content {
         }
 
         main.content .neutral-section a {
-            color: var(--bordeaux-donker);
+            color: var(--groen-donker);
             font-weight: 700;
             border-bottom: 2px solid transparent;
             transition: border-color 0.3s ease, color 0.3s ease;
@@ -298,14 +311,14 @@ main.content {
 
             main.content .neutral-section a:hover,
             main.content .neutral-section a:focus {
-                color: var(--bordeaux-medium);
-                border-color: var(--bordeaux-medium);
+                color: var(--groen-medium);
+                border-color: var(--groen-medium);
                 outline: none;
                 cursor: pointer;
             }
 
         main.content .neutral-section .uitpas-note {
-            color: var(--bordeaux-donker);
+            color: var(--groen-donker);
             font-style: italic;
             font-weight: 600;
         }
@@ -330,7 +343,7 @@ main.content {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    color: var(--bordeaux-donker);
+    color: var(--groen-donker2);
     font-weight: 600;
     text-decoration: none;
     user-select: none;
@@ -344,7 +357,7 @@ main.content {
 
 .social-logo {
     height: 70px; /* zelfde hoogte voor Facebook en YouTube */
-    filter: drop-shadow(0 1px 1px rgba(74, 20, 29, 0.5));
+    filter: drop-shadow(0 1px 1px rgba(26, 94, 32, 0.5));
     transition: height 0.3s ease;
 }
 
@@ -353,10 +366,10 @@ main.content {
     height: 80px;
 }
 
-
 .event-link {
     margin-left: 1rem;
 }
+
 
 
 /*************************************************************
@@ -376,7 +389,7 @@ main.content .kalender-section {
 }
 
 main.content .kalender-titel {
-    color: #000000;
+    color: var(--zwart);
     margin-bottom: 0.5em;
 }
 
@@ -387,11 +400,11 @@ main.content .kalender-tabel {
 }
 
     main.content .kalender-tabel th {
-        background-color: #f0f0f0;
+        background-color: var(--licht-grijs);
         color: var(--tekst-donker);
         text-transform: uppercase;
         padding: 0.5em;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid var(--grijs-lichter);
     }
 
     main.content .kalender-tabel td {
@@ -401,7 +414,7 @@ main.content .kalender-tabel {
     }
 
     main.content .kalender-tabel a {
-        color: #007acc !important;
+        color: var(--blauw-fris);
         text-decoration: none;
     }
 
@@ -416,14 +429,14 @@ main.content .kalender-info {
 }
 
     main.content .kalender-info a {
-        color: #007acc; /* een fris blauw */
+        color: var(--blauw-fris);
         text-decoration: none;
-        font-weight: 500; /* optioneel: maakt het iets opvallender */
+        font-weight: 500; /* optioneel */
     }
 
         main.content .kalender-info a:hover {
+            color: var(--blauw-fris-donker);
             text-decoration: underline;
-            color: #005f99; /* iets donkerder blauw bij hover */
         }
 
 
@@ -436,8 +449,8 @@ main.content .terugblik-titel {
     position: relative;
     font-size: 2.2rem;
     font-weight: 700;
-    color: #000000;
-    border-bottom: 3px solid var(--bordeaux-donker);
+    color: var(--zwart);
+    border-bottom: 3px solid var(--groen-donker);
     padding-bottom: 0.2em;
     margin-bottom: 0.8em;
     font-family: Arial, sans-serif;
@@ -450,7 +463,7 @@ main.content .terugblik-titel {
 main.content .terugblik-jaar {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #000000;
+    color: var(--zwart);
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-family: Arial, sans-serif;
@@ -459,19 +472,19 @@ main.content .terugblik-jaar {
 }
 
 main.content .terugblik-tekst {
-    background: #ffffff;
-    border: 1px solid #ddd;
+    background: var(--wit);
+    border: 1px solid var(--grijs-licht);
     border-radius: 4px;
     padding: 0.5em 0.75em;
     font-family: Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.4;
-    color: #333333;
+    color: var(--grijs-donker);
     transition: background-color 0.25s ease;
 }
 
     main.content .terugblik-tekst:hover {
-        background-color: #f0f6fc;
+        background-color: var(--blauw-heel-licht);
     }
 
 main.content .terugblik-regel {
@@ -489,13 +502,13 @@ main.content .terugblik-tekst .datum {
     flex-shrink: 0;
     width: 110px; /* vaste breedte, pas eventueel aan */
     font-weight: 700;
-    color: #222222;
+    color: var(--tekst-donker);
     font-variant-numeric: tabular-nums;
     margin-right: 4em; /* voeg extra marge toe */
 }
 
 main.content .terugblik-tekst a {
-    color: #007acc;
+    color: var(--blauw-fris);
     text-decoration: none;
     font-weight: 600;
     border-bottom: 1.5px solid transparent;
@@ -504,8 +517,8 @@ main.content .terugblik-tekst a {
 
     main.content .terugblik-tekst a:hover,
     main.content .terugblik-tekst a:focus {
-        color: #005ea3;
-        border-bottom-color: #005ea3;
+        color: var(--blauw-fris-hover);
+        border-bottom-color: var(--blauw-fris-hover);
         text-decoration: none;
         outline: none;
     }
@@ -516,7 +529,7 @@ main.content .terugblik-tekst a {
  *************************************************************/
 
 main.content .recreatief-volleybal-jaar {
-    color: #000000;
+    color: var(--zwart);
     margin-bottom: 0;
     font-size: 1.8rem; /* groter dan standaard */
     font-weight: 700;
@@ -525,7 +538,7 @@ main.content .recreatief-volleybal-jaar {
 main.content .volleybal-jaar {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #000000;
+    color: var(--zwart);
     margin-top: 0.5em;
     margin-bottom: 0.2em; /* minder ruimte onder titel */
     font-family: Arial, sans-serif;
@@ -540,7 +553,7 @@ main.content hr {
 main.content .volleybal-sub {
     font-size: 1.1rem;
     font-weight: 500;
-    color: #444;
+    color: var(--grijs-medium);
     margin-top: -0.3em;
     margin-bottom: 0;
     font-family: Arial, sans-serif;
@@ -548,14 +561,14 @@ main.content .volleybal-sub {
 
 main.content div.volleybal-tekst,
 main.content div.volleybal-tekst * {
-    background: #ffffff;
-    border: 1px solid #ddd;
+    background: var(--wit);
+    border: 1px solid var(--grijs-licht);
     margin-top: 0; /* geen extra ruimte boven de tekst */
     border-radius: 4px;
     padding: 0.5em 0.75em;
     font-family: Arial, sans-serif;
     font-size: 1rem;
-    color: #000000;
+    color: var(--zwart);
     transition: background-color 0.25s ease;
     white-space: normal; /* tekst mag breken */
     line-height: 2;
@@ -568,7 +581,7 @@ main.content .volleybal-tekst p strong {
 }
 
 main.content .volleybal-tekst:hover {
-    background-color: #f0f6fc;
+    background-color: var(--blauw-heel-licht);
 }
 
 main.content .volleybal-regel {
@@ -576,17 +589,17 @@ main.content .volleybal-regel {
 }
 
 main.content .volleybal-tekst a {
-    color: #007acc;
+    color: var(--blauw-fris);
     text-decoration: none;
     font-weight: 600;
-    border-bottom: 1.5px solid #ccc;
+    border-bottom: 1.5px solid var(--grijs-lichter);
     transition: color 0.25s ease, border-bottom-color 0.25s ease;
 }
 
     main.content .volleybal-tekst a:hover,
     main.content .volleybal-tekst a:focus {
-        color: #005ea3;
-        border-bottom-color: #005ea3;
+        color: var(--blauw-fris-donker);
+        border-bottom-color: var(--blauw-fris-donker);
         border-bottom-width: 3px;
         text-decoration: none;
         outline: none;
@@ -604,7 +617,7 @@ main.content .volleybal-kalender {
 }
 
     main.content .volleybal-kalender thead {
-        background-color: var(--bordeaux-medium);
+        background-color: var(--groen-medium);
         color: var(--wit);
         font-weight: 700;
         font-size: 1rem;
@@ -614,7 +627,7 @@ main.content .volleybal-kalender {
     main.content .volleybal-kalender td {
         padding: 0.4em 0.75em;
         text-align: center;
-        border: 1px solid #ddd;
+        border: 1px solid var(--grijs-licht);
     }
 
     /* Rijen standaard wit */
@@ -622,35 +635,32 @@ main.content .volleybal-kalender {
         background-color: var(--wit);
     }
 
-        /* Hover effect op rijen */
         main.content .volleybal-kalender tbody tr:hover {
-            background-color: #f9e6eb; /* subtiel roze hover */
+            background-color: var(--groen-licht); /* subtiele lichte hover in paars */
         }
 
     /* 2e kolom (dagen) een andere kleur */
     main.content .volleybal-kalender tbody td:nth-child(2) {
-        color: var(--bordeaux-medium);
+        color: var(--groen-medium);
         font-weight: 600;
     }
 
-    /* Gijzegem cellen markeren */
     main.content .volleybal-kalender tbody td.gijzegem {
-        color: #a0283e;
+        color: var(--blauw-donker); 
         font-weight: 700;
     }
 
-    /* Specifieke tijd ‘20u00’ markeren */
     main.content .volleybal-kalender tbody td.uur-special {
-        color: #d14760;
+        color: var(--blauw-medium); 
         font-weight: 700;
     }
 
     main.content .volleybal-kalender tbody td.woe {
-        color: var(--bordeaux-donker);
+        color: var(--paars-donker);
         font-weight: 900;
         font-style: italic;
         text-transform: uppercase;
-        text-shadow: 0 1px 1px rgba(155,31,72,0.3);
+        text-shadow: 0 1px 1px rgba(27, 58, 130, 0.3); 
     }
 
 
@@ -665,8 +675,8 @@ main.content .bestuur-container {
     margin: 0 auto;
     padding: 1.5rem;
     font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #fafafa;
+    color: var(--grijs-donker);
+    background-color: var(--licht-grijs-achtergrond);
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
@@ -676,11 +686,11 @@ main.content .contact-header .contact-intro {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
-    color: #222;
+    color: var(--tekst-donker);
 }
 
     main.content .contact-header .contact-intro .email-link {
-        color: #007acc;
+        color: var(--blauw-fris);
         text-decoration: none;
     }
 
@@ -706,7 +716,7 @@ main.content .bestuursintro p {
     font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 1rem;
-    color: #444;
+    color: var(--grijs-medium);
 }
 
 /* Grid voor bestuursleden */
@@ -719,8 +729,8 @@ main.content .bestuursgrid {
 
 /* Kaarten van bestuursleden */
 main.content .bestuurslid-card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: var(--wit);
+    border: 1px solid var(--grijs-licht);
     border-radius: 6px;
     padding: 1rem;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
@@ -735,8 +745,8 @@ main.content .bestuurslid-card {
     main.content .bestuurslid-card .functie-header h3 {
         margin: 0 0 0.5rem 0;
         font-size: 1.2rem;
-        color: #005a9c;
-        border-bottom: 2px solid #007acc;
+        color: var(--blauw-fris-midden);
+        border-bottom: 2px solid var(--blauw-fris);
         padding-bottom: 0.2rem;
     }
 
@@ -744,12 +754,12 @@ main.content .bestuurslid-card {
     main.content .bestuurslid-card .contact-details p {
         margin: 0.2rem 0;
         font-size: 0.95rem;
-        color: #555;
+        color: var(--grijs-medium-donker);
     }
 
         main.content .bestuurslid-card .contact-details p strong {
             font-weight: 700;
-            color: #222;
+            color: var(--tekst-donker);
         }
 
 /* Sectie medebestuursleden */
@@ -759,9 +769,9 @@ main.content .medebestuur-section {
 
 main.content .medebestuur-title {
     font-size: 1.4rem;
-    color: #005a9c;
+    color: var(--blauw-fris-midden);
     margin-bottom: 1rem;
-    border-bottom: 2px solid #007acc;
+    border-bottom: 2px solid var(--blauw-fris);
     padding-bottom: 0.3rem;
 }
 
@@ -775,23 +785,23 @@ main.content .medebestuur-grid {
 /* Kaarten medebestuursleden */
 main.content .medebestuur-card {
     background-color: white;
-    border: 1px solid #ddd;
+    border: 1px solid var(--grijs-licht);
     border-radius: 5px;
     padding: 0.8rem 1rem;
     font-size: 0.9rem; /* basis grootte voor de kaart */
-    color: #444;
+    color: var(--grijs-medium);
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
     /* Kleur en marge voor alle paragrafen */
     main.content .medebestuur-card p {
         margin: 0.2rem 0;
-        color: #444;
+        color: var(--grijs-medium);
     }
 
     /* Namen groter en vetgedrukt */
     main.content .medebestuur-card strong {
-        color: #222;
+        color: var(--tekst-donker);
         font-weight: 700;
         font-size: 1rem; /* iets groter voor namen */
     }
@@ -809,10 +819,10 @@ main.content .location-section {
     width: 100%; /* volledige breedte */
     margin: 2rem 0; /* boven en onder ruimte, geen auto horizontaal */
     padding: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--grijs-super-licht);
     border-radius: 0; /* geen afgeronde hoeken als het breed is */
     font-family: Arial, sans-serif;
-    color: #333;
+    color: var(--grijs-donker); 
 }
 
 main.content .header-title {
@@ -820,7 +830,7 @@ main.content .header-title {
     font-weight: bold;
     text-align: center;
     margin-bottom: 0.5rem;
-    color: #004080;
+    color: var(--blauw-donker); 
 }
 
 main.content .section-title {
@@ -828,14 +838,14 @@ main.content .section-title {
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #004080;
+    border-bottom: 2px solid var(--blauw-donker); 
     padding-bottom: 0.3rem;
-    color: #0066cc;
+    color: var(--blauw-medium); 
 }
 
 main.content .section-divider {
     border: none;
-    border-bottom: 1.5px solid #ccc;
+    border-bottom: 1.5px solid var(--grijs-licht); 
     margin-bottom: 2rem;
 }
 
@@ -846,23 +856,24 @@ main.content .location-block {
 main.content .location-label {
     font-weight: 600;
     font-size: 1.1rem;
-    color: #00509e;
+    color: var(--blauw-fris-midden); 
 }
 
 main.content .location-name {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #003366;
+    color: var(--blauw-donker); 
 }
 
 main.content .address-line {
     font-size: 1rem;
-    color: #444;
+    color: var(--grijs-medium); 
 }
 
 main.content .address-text {
     line-height: 1.4;
 }
+
 
 
 /* Aanpassing voor Leaflet map containers */
@@ -871,7 +882,7 @@ main.content .map-frame {
     width: 425px;
     height: 350px;
     margin-top: 0.8rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--grijs-lichter);
     border-radius: 6px;
 }
 */
@@ -882,14 +893,14 @@ main.content .map-frame {
     max-width: 425px;
     height: 350px;
     margin-top: 0.8rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--grijs-lichter);
     border-radius: 6px;
 }
 
 
 main.content .map-link {
     font-size: 0.9rem;
-    color: #0066cc;
+    color: var(--blauw-fris);
     text-decoration: none;
 }
 
@@ -906,10 +917,10 @@ main.content .fotoalbum-section {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--licht-grijs-achtergrond); 
     border-radius: 8px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: var(--grijs-donker); 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -917,7 +928,7 @@ main.content .fotoalbum-section {
         font-size: 2.5rem;
         font-weight: 700;
         text-align: center;
-        color: #004080;
+        color: var(--blauw-donker-extra);
         margin-bottom: 0.2rem;
     }
 
@@ -926,19 +937,19 @@ main.content .fotoalbum-section {
         font-weight: 600;
         text-align: center;
         margin-top: 0;
-        color: #0066cc;
+        color: var(--blauw-medium); 
         margin-bottom: 1rem;
     }
 
     main.content .fotoalbum-section .section-divider {
         border: none;
-        border-bottom: 2px solid #004080;
+        border-bottom: 2px solid var(--blauw-donker-extra);
         margin-bottom: 2rem;
     }
 
     main.content .fotoalbum-section .last-update {
         font-size: 1.2rem;
-        color: #555;
+        color: var(--grijs-medium-donker); 
         margin-bottom: 1.5rem;
         text-align: center;
     }
@@ -948,7 +959,7 @@ main.content .fotoalbum-section {
     }
 
     main.content .fotoalbum-section a {
-        color: #0066cc;
+        color: var(--blauw-medium); 
         text-decoration: none;
         font-weight: 600;
     }
@@ -967,8 +978,9 @@ main.content .fotoalbum-section {
     }
 
     main.content .fotoalbum-section .photo-archive {
-        color: #333333; /* donkere tekst */
+        color: var(--grijs-donker); 
     }
+
 
 /*************************************************************
  *                    't VELLEKEN                            *
@@ -978,23 +990,23 @@ main.content .velleken-section {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--licht-grijs-achtergrond); 
     border-radius: 8px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: var(--grijs-donker); 
 }
 
 main.content .velleken-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #004080;
+    color: var(--blauw-donker-extra); 
     margin-bottom: 1rem;
     text-align: center;
 }
 
 main.content .velleken-divider {
     border: none;
-    border-bottom: 2px solid #004080;
+    border-bottom: 2px solid var(--blauw-donker-extra); 
     margin-bottom: 2rem;
 }
 
@@ -1005,7 +1017,7 @@ main.content .velleken-link {
 }
 
     main.content .velleken-link a {
-        color: #0066cc;
+        color: var(--blauw-medium); 
         text-decoration: none;
         font-weight: 600;
     }
@@ -1014,6 +1026,7 @@ main.content .velleken-link {
         main.content .velleken-link a:focus {
             text-decoration: underline;
         }
+
 
 
 /*************************************************************
@@ -1025,10 +1038,10 @@ main.content .algemene-links {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--licht-grijs-achtergrond);
     border-radius: 8px;
     font-family: Arial, sans-serif;
-    color: #333333; /* donkere tekst */
+    color: var(--grijs-donker);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -1036,13 +1049,13 @@ main.content .algemene-links {
         font-size: 2.5rem;
         font-weight: 700;
         text-align: center;
-        color: #004080;
+        color: var(--blauw-donker-extra);
         margin-bottom: 0.5rem;
     }
 
     main.content .algemene-links .sectie-scheiding {
         border: none;
-        border-bottom: 2px solid #004080;
+        border-bottom: 2px solid var(--blauw-donker-extra);
         margin-bottom: 2rem;
     }
 
@@ -1053,7 +1066,7 @@ main.content .algemene-links {
     }
 
         main.content .algemene-links .link-item a {
-            color: #0066cc;
+            color: var(--blauw-medium);
             text-decoration: none;
             font-weight: 600;
         }
@@ -1070,10 +1083,10 @@ main.content .privacyverklaring {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--licht-grijs-achtergrond);
     border-radius: 8px;
     font-family: Arial, sans-serif;
-    color: #333333;
+    color: var(--grijs-donker);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -1081,13 +1094,13 @@ main.content .privacyverklaring {
         font-size: 2.5rem;
         font-weight: 700;
         text-align: center;
-        color: #004080;
+        color: var(--blauw-donker-extra);
         margin-bottom: 0.5rem;
     }
 
     main.content .privacyverklaring .sectie-scheiding {
         border: none;
-        border-bottom: 2px solid #004080;
+        border-bottom: 2px solid var(--blauw-donker-extra);
         margin-bottom: 2rem;
     }
 
@@ -1095,17 +1108,18 @@ main.content .privacyverklaring {
         font-size: 1.6rem;
         font-weight: 600;
         margin-bottom: 1rem;
-        color: #0066cc;
+        color: var(--blauw-medium);
     }
 
     main.content .privacyverklaring .privacy-text {
         font-size: 1.1rem;
         line-height: 1.5;
         margin-bottom: 1rem;
+        color: var(--grijs-donker);
     }
 
         main.content .privacyverklaring .privacy-text a {
-            color: #0066cc;
+            color: var(--blauw-medium);
             text-decoration: none;
         }
 
@@ -1118,12 +1132,12 @@ main.content .privacyverklaring {
         margin-left: 1.5rem;
         margin-bottom: 1.5rem;
         font-size: 1.1rem;
-        color: #333333;
+        color: var(--grijs-donker);
         list-style-type: disc;
     }
 
     main.content .privacyverklaring .privacy-text .email-link {
-        color: #007acc;
+        color: var(--blauw-fris);
         text-decoration: none;
     }
 
@@ -1137,13 +1151,13 @@ main.content .privacyverklaring {
  *************************************************************/
 
 footer {
-    background-color: #e5e5e5; /* lichte grijstint */
+    background-color: var(--grijs-licht);
     padding: 15px 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
-    color: #444444; /* donkergrijs voor tekst */
-    border-top: 1px solid #cccccc;
+    color: var(--grijs-medium);
+    border-top: 1px solid var(--grijs-licht);
     position: relative;
     bottom: 0;
     width: 100%;
@@ -1151,7 +1165,7 @@ footer {
 }
 
     footer a {
-        color: #3a72d1; /* medium blauw*/
+        color: var(--blauw-medium);
         text-decoration: none;
         font-weight: 600;
         margin: 0 8px;
@@ -1160,7 +1174,7 @@ footer {
 
         footer a:hover,
         footer a:focus {
-            color: #1f4ea8; /* donkerder blauw voor hover */
+            color: var(--blauw-donker);
             outline: none;
             text-decoration: underline;
         }
@@ -1306,20 +1320,21 @@ footer {
         }
         main.content .kalender-tabel a {
             font-size: 0.6rem !important;
-            white-space: normal !important; /* zorgen dat links kunnen breken */
+            white-space: normal !important;
             word-break: break-word !important;
             overflow-wrap: break-word !important;
-            border-bottom: 1px solid #ccc !important;
+            border-bottom: 1px solid var(--grijs-licht) !important;
             font-weight: 600 !important;
             text-decoration: none !important;
         }
 
             main.content .kalender-tabel a:hover,
             main.content .kalender-tabel a:focus {
-                color: #005ea3 !important;
-                border-bottom-color: #005ea3 !important;
+                color: var(--blauw-fris-hover) !important;
+                border-bottom-color: var(--blauw-fris-hover) !important;
                 border-bottom-width: 2px !important;
             }
+
 
         
 
@@ -1337,8 +1352,8 @@ footer {
     main.content .volleybal-tekst a,
     main.content .terugblik-tekst a,
     footer a {
-        font-size: 0.8rem !important; 
-        border-bottom: 1px solid #ccc !important;
+        font-size: 0.8rem !important;
+        border-bottom: 1px solid var(--grijs-licht) !important;
         font-weight: 600 !important;
         text-decoration: none !important;
     }
@@ -1347,8 +1362,8 @@ footer {
         main.content a:focus,
         footer a:hover,
         footer a:focus {
-            color: #005ea3 !important;
-            border-bottom-color: #005ea3 !important;
+            color: var(--blauw-fris-hover) !important;
+            border-bottom-color: var(--blauw-fris-hover) !important;
             border-bottom-width: 2px !important;
         }
 
