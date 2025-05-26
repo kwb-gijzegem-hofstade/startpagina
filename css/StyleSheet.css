@@ -1385,7 +1385,7 @@ footer {
 @media (max-width: 844px) and (max-height: 420px) and (orientation: landscape) {
     /* Variabelen */
     :root {
-        --header-height: 50px; /* Iets lager dan portrait */
+        --header-height: 50px;
         --topnav-height: 50px;
     }
 
@@ -1404,7 +1404,7 @@ footer {
     }
 
         .header-container h1 {
-            font-size: 1rem !important; /* kleiner dan 1.2rem */
+            font-size: 1rem !important;
             margin: 0 !important;
             line-height: 1.1 !important;
             white-space: nowrap !important;
@@ -1441,25 +1441,28 @@ footer {
         white-space: nowrap !important;
     }
 
-    /* Body en container */
+    /* Body */
     body {
-        padding-top: calc(var(--header-height) + var(--topnav-height)) !important;
         font-size: 12px !important;
         line-height: 1.2 !important;
+        margin: 0 !important;
+        /* padding-top verwijderd, want dit schuift alles onder navbar */
     }
 
+    /* Container */
     .container {
+        padding-top: calc(var(--header-height) + var(--topnav-height)) !important;
+        height: calc(100vh - var(--header-height) - var(--topnav-height)) !important;
         display: flex !important;
         flex-wrap: nowrap !important;
         gap: 0 !important;
         padding-right: 1rem !important;
-        height: calc(100vh - var(--header-height) - var(--topnav-height)) !important;
         box-sizing: border-box !important;
     }
 
     /* Sidebar */
     aside.sidebar {
-        flex: 0 0 25% !important; /* iets meer ruimte dan 20% */
+        flex: 0 0 25% !important;
         max-width: 25% !important;
         min-width: 25% !important;
         padding: 0.5rem 1rem !important;
@@ -1479,7 +1482,7 @@ footer {
         box-sizing: border-box !important;
     }
 
-        /* Alle teksten inclusief koppen kleiner */
+        /* Uniforme font styling */
         body,
         .header-container h1,
         .topnav a,
@@ -1498,7 +1501,7 @@ footer {
             line-height: 1.2 !important;
         }
 
-            /* Afbeeldingen smaller maken */
+            /* Afbeeldingen responsief */
             aside.sidebar img,
             main.content img {
                 max-width: 100% !important;
@@ -1507,7 +1510,7 @@ footer {
                 display: block !important;
             }
 
-    /* Logo’s smaller maken */
+    /* Logo's kleiner */
     .sidebar-logo {
         max-width: 100% !important;
         height: auto !important;
