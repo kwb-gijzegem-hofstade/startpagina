@@ -1185,6 +1185,13 @@ footer {
         line-height: 1.3 !important;
     }
 
+    .header-container h1 {
+        font-size: 1.5rem !important; /* kleiner dan nu */
+        line-height: 1.1 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     /* Container flex aanpassing */
     .container {
         flex-direction: column !important;
@@ -1238,7 +1245,6 @@ footer {
         font-size: 1.1rem !important; /* van 1.3rem naar 1.1rem */
         margin-bottom: 0.5rem !important;
     }
-
     main.content h2 {
         font-size: 1.3rem !important; /* van 1.5rem naar 1.3rem */
     }
