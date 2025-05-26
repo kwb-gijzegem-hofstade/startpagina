@@ -1235,23 +1235,6 @@ footer {
             padding: 0.3rem 0.5rem !important;
         }
 
-        .topnav::-webkit-scrollbar {
-            height: 6px; /* Dikkere scrollbar */
-        }
-
-        .topnav::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        .topnav::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 3px;
-        }
-
-            .topnav::-webkit-scrollbar-thumb:hover {
-                background: #555;
-            }
-
     /* Alle koppen kleiner */
     main.content h1,
     main.content h2,
@@ -1501,7 +1484,7 @@ footer {
     .sidebar-logo {
         max-width: 100%;
         height: auto;
-        max-height: 40px;
+        max-height: 70px;
         filter: drop-shadow(0 1px 1px rgba(74, 20, 29, 0.5));
         transition: height 0.3s ease;
     }
