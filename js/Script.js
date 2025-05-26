@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const linksBtn = document.getElementById('Links-btn');
     const privacyBtn = document.getElementById('Privacy-btn');
     const vellekenBtn = document.getElementById('Velleken-btn');
-    
+
     const main = document.querySelector('main.content');
 
     if (!main) {
@@ -444,33 +444,33 @@ document.addEventListener('DOMContentLoaded', () => {
 `;
 
 
-//Wegbeschrijving (gebruik van leaflet)
-/* 
-    const wegbeschrijvingBtnInhoud = `
-<section class="location-section">
-  <p class="section-title"><strong>Kaarten en adresgegevens</strong></p>
-  <hr class="section-divider">
-
-  <div class="location-block">
-    <p><span class="location-label">Ontmoetingscentrum</span><font size="4" class="address-text">
-      <span class="location-name">De Looierij</span><br>
-      <span class="address-line">Dekkersweg 4</span><br>
-      <span class="address-line">9308 Gijzegem</span></font>
-    </p>
-    <div id="map1" class="map-frame" style="width:425px; height:350px;"></div>
-  </div>
-
-  <div class="location-block">
-    <p class="address-block">
-      <span class="location-name">Sporthal Sint-Vincentiusinstituut</span><br>
-      <span class="address-line">Kruisstraat</span><br>
-      <span class="address-line">9308 Gijzegem</span>
-    </p>
-    <div id="map2" class="map-frame" style="width:425px; height:350px;"></div>
-  </div>
-</section>
-`;
-*/
+    //Wegbeschrijving (gebruik van leaflet)
+    /* 
+        const wegbeschrijvingBtnInhoud = `
+    <section class="location-section">
+      <p class="section-title"><strong>Kaarten en adresgegevens</strong></p>
+      <hr class="section-divider">
+    
+      <div class="location-block">
+        <p><span class="location-label">Ontmoetingscentrum</span><font size="4" class="address-text">
+          <span class="location-name">De Looierij</span><br>
+          <span class="address-line">Dekkersweg 4</span><br>
+          <span class="address-line">9308 Gijzegem</span></font>
+        </p>
+        <div id="map1" class="map-frame" style="width:425px; height:350px;"></div>
+      </div>
+    
+      <div class="location-block">
+        <p class="address-block">
+          <span class="location-name">Sporthal Sint-Vincentiusinstituut</span><br>
+          <span class="address-line">Kruisstraat</span><br>
+          <span class="address-line">9308 Gijzegem</span>
+        </p>
+        <div id="map2" class="map-frame" style="width:425px; height:350px;"></div>
+      </div>
+    </section>
+    `;
+    */
 
     const wegbeschrijvingBtnInhoud = `
 <section class="location-section">
@@ -555,7 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </section>
 `;
 
-    const linksBtnInhoud =` <section class="sectie algemene-links">
+    const linksBtnInhoud = ` <section class="sectie algemene-links">
         <p class="sectie-titel">Hyperlinks naar andere websites</p>
         <hr class="sectie-scheiding" />
         <p class="link-item"><a target="_blank" href="http://www.chiropopov.be/">Chiro Popov Gijzegem</a></p>
@@ -597,8 +597,12 @@ document.addEventListener('DOMContentLoaded', () => {
   </ul>
 
   <p class="privacy-text">
-    Als je je gegevens wil inkijken of verbeteren, kan dit steeds online (<a href="https://korpus.kwb.be/" target="_blank">https://korpus.kwb.be</a>) of via mail aan Guido Bruyland (guido punt bruyland at kwbgijzegem punt be).
+  Als je je gegevens wil inkijken of verbeteren, kan dit steeds online via
+  <a href="https://korpus.kwb.be/" target="_blank" rel="noopener noreferrer">https://korpus.kwb.be</a>
+  of via mail aan Guido Bruyland (
+  <a href="mailto:guido.bruyland@kwbgijzegem.be" class="email-link">guido.bruyland@kwbgijzegem.be</a>).
   </p>
+
 
   <p class="privacy-text">
     Kwb Gijzegem-Hofstade verklaart hierbij de Europese Verordening 2016/679 rond de bescherming van persoonsgegevens na te leven.
