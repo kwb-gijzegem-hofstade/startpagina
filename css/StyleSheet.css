@@ -1381,7 +1381,7 @@ footer {
 }
 
 /* Smartphone in landscapemodus */
-@media (max-width: 844px) and (max-height: 420px) and (orientation: landscape) {
+@media (max-device-width: 844px) and (max-device-height: 420px) and (orientation: landscape) {
     :root {
         --header-height: 50px;
         --topnav-height: 50px;
