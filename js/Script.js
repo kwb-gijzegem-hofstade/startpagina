@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="bestuur-container">
   <div class="contact-header">
     <p class="contact-intro">
-      Wens je met KWB <span class="plaatsnaam">Gijzegem-Hofstade</span> in contact te treden 
+      Wens je met Raak <span class="plaatsnaam">Gijzegem-Hofstade</span> in contact te treden 
       (vragen, opmerkingen, suggesties...), neem contact op met onze voorzitter, 
       Guido Bruyland, of stuur een mail naar:
       <a href="mailto:info@raakgijzegem.be" class="email-link">
@@ -601,27 +601,27 @@ document.addEventListener('DOMContentLoaded', () => {
   <p class="privacy-header"><strong>Privacyverklaring ledengegevens</strong></p>
 
   <p class="privacy-text">
-    Kwb Gijzegem-Hofstade bewaart enkel de gegevens die ze van jou ontvangt bij het afsluiten van je lidmaatschap (naam en adres, geboortedatum, contactgegevens als je deze doorgaf). Deze gegevens worden opgeslagen in de beveiligde database van kwb vzw, U. Britsierslaan 5 te 1030 Schaarbeek. De gegevens worden tot maximum 2 jaar na het stoppen van het lidmaatschap bewaard.
+    Raak Gijzegem-Hofstade bewaart enkel de gegevens die ze van jou ontvangt bij het afsluiten van je lidmaatschap (naam en adres, geboortedatum, contactgegevens als je deze doorgaf). Deze gegevens worden opgeslagen in de beveiligde database van raak vzw, U. Britsierslaan 5 te 1030 Schaarbeek. De gegevens worden tot maximum 2 jaar na het stoppen van het lidmaatschap bewaard.
   </p>
 
   <p class="privacy-text">De gegevens worden gebruikt voor:</p>
 
   <ul class="privacy-lijst">
-    <li>De ledenadministratie (gebeurt door kwb vzw)</li>
+    <li>De ledenadministratie (gebeurt door raak vzw)</li>
     <li>Het bezorgen van het ledenblad, de uitnodigingen voor de activiteiten, de nieuwsbrief van onze afdeling.</li>
-    <li>De kwb-ledenverzekering (gebeurt door kwb vzw)</li>
+    <li>De raak-ledenverzekering (gebeurt door raak vzw)</li>
   </ul>
 
   <p class="privacy-text">
   Als je je gegevens wil inkijken of verbeteren, kan dit steeds online via
-  <a href="https://korpus.kwb.be/" target="_blank" rel="noopener noreferrer">https://korpus.kwb.be</a>
+  <a href="https://korpus.raakvzw.be/" target="_blank" rel="noopener noreferrer">https://korpus.raakvzw.be/</a>
   of via mail (
   <a href="mailto:info@raakgijzegem.be" class="email-link">info@raakgijzegem.be</a>).
   </p>
 
 
   <p class="privacy-text">
-    Kwb Gijzegem-Hofstade verklaart hierbij de Europese Verordening 2016/679 rond de bescherming van persoonsgegevens na te leven.
+    Raak Gijzegem-Hofstade verklaart hierbij de Europese Verordening 2016/679 rond de bescherming van persoonsgegevens na te leven.
   </p>
 </section>
 `;
