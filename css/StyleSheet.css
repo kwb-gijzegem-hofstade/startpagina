@@ -1258,24 +1258,36 @@ footer {
 
     /* Tabellen compacter en leesbaar maken */
     main.content table,
-    main.content .kalender-tabel,
     main.content .volleybal-kalender {
-        font-size: 0.65rem !important; /* van 0.75rem naar 0.65rem */
+        font-size: 0.65rem !important; /* standaard grootte */
         width: 100% !important;
         border-collapse: collapse !important;
-        table-layout: auto !important; /* flexibele kolombreedtes */
+        table-layout: auto !important;
     }
 
         main.content table th,
         main.content table td,
-        main.content .kalender-tabel th,
-        main.content .kalender-tabel td,
         main.content .volleybal-kalender th,
         main.content .volleybal-kalender td {
             padding: 0.3em 0.5em !important;
-            font-size: 0.65rem !important; /* van 0.75rem naar 0.65rem */
-            white-space: nowrap !important; /* voorkom afbreken binnen woorden */
-            word-break: normal !important; /* voorkom breken per letter */
+            font-size: 0.65rem !important;
+            white-space: nowrap !important;
+            word-break: normal !important;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+    /* Alleen kalender-tabel lettergrootte halveren */
+    main.content .kalender-tabel {
+        font-size: 0.325rem !important; /* de helft */
+    }
+
+        main.content .kalender-tabel th,
+        main.content .kalender-tabel td {
+            font-size: 0.3rem !important;
+            padding: 0.3em 0.5em !important;
+            white-space: nowrap !important;
+            word-break: normal !important;
             vertical-align: middle;
             text-align: left;
         }
