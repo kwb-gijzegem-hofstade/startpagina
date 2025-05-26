@@ -1170,7 +1170,7 @@ footer {
  *                    VOOR KLEINERE SCHERMEN                 *
  *************************************************************/
 
-@media (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 768px) {
     /* Basis tekst en body */
     body {
         font-size: 10px !important; /* van 11px naar 10px */
