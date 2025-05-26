@@ -22,43 +22,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Definieer inhoud als template strings
     const startpaginaInhoud = `
-        <div class="neutral-section">
-            <h2>Welkom op de website van</h2>
-            <h3>KWB Gijzegem-Hofstade</h3>
-            <hr />
-            <p class="last-update">Laatste aanpassing: 29/06/2024 (plan met deelnemers garageverkoop en fietszoektocht)</p>
-            <section class="events">
-                <h4>Onze eerstvolgende activiteiten</h4>
-                <ul>
-                    <li>
-                        <strong>Zo 30/06</strong>
-                        <a class="event-link" href="http://kwb.gijhof.be/pdf/garageverkoop_2024.pdf" target="_blank" rel="noopener noreferrer">Garageverkoop</a><br />
-                        Inschrijven via:
-                        <a href="https://forms.gle/pDzHnikG2VLodxg67" target="_blank" rel="noopener noreferrer">Google Formulier</a>
-                    </li>
-                    <li>
-                        <a href="http://kwb.gijhof.be/pdf/garageverkoop_deelnemers_v2_2024.pdf" target="_blank" rel="noopener noreferrer">Plan met deelnemers garageverkoop</a>
-                    </li>
-                    <li>
-                        <strong>01/07 - 01/10</strong>
-                        <a class="event-link" href="http://kwb.gijhof.be/pdf/fietszoektocht_2024.pdf" target="_blank" rel="noopener noreferrer">Fietszoektocht</a>
-                    </li>
-                    <li>
-                        <strong>04/10-06/10/2024</strong>
-                        <a class="event-link" href="http://kwb.gijhof.be/pdf/weekendreis_2024.pdf" target="_blank" rel="noopener noreferrer">Weekendreis Normandi&euml;</a> (volzet)
-                    </li>
-                </ul>
-            </section>
-            <p class="uitpas-note">
-                Houders van een UiTPAS met kansentarief hebben voordeel bij KWB Gijzegem-Hofstade.
-            </p>
-        </div>
-    `;
+    <div class="neutral-section">
+        <h2>Welkom op de website van</h2>
+        <h3>Raak Gijzegem-Hofstade</h3>
+        <hr />
+        <p class="last-update">Laatste aanpassing: 24/05/2025 (uitnodiging op stap in Brussel, barbecue en fietszoektocht)</p>
+        <section class="events">
+            <h4>Onze eerstvolgende activiteiten</h4>
+            <ul>
+                <li>
+                    <strong>Zo 25/05</strong>
+                    <a class="event-link" href="https://raak.gijhof.be/pdf/praatcafe_04-05_2025.pdf" target="_blank" rel="noopener noreferrer">Praatcaf&eacute;</a>
+                </li>
+                <li>
+                    <strong>Za 31/05</strong>
+                    <a class="event-link" href="https://raak.gijhof.be/pdf/buitenspeelnamiddag_2025.pdf" target="_blank" rel="noopener noreferrer">Buitenspeelnamiddag (bumperball en cornhole)</a>
+                </li>
+                <li>
+                    <strong>Za 21/06</strong>
+                    <a class="event-link" href="https://raak.gijhof.be/pdf/op_stap_in_brussel_2025.pdf" target="_blank" rel="noopener noreferrer">Op stap in Brussel</a> &nbsp; inschrijven bij Guido
+                </li>
+                <li>
+                    <strong>Za 28/06</strong>
+                    <a class="event-link" href="https://raak.gijhof.be/pdf/bbq_2025%20.pdf" target="_blank" rel="noopener noreferrer">Barbecue</a>
+                    &nbsp; inschrijven via
+                    <a href="https://forms.gle/yuhaDJqidjkRRamh9" target="_blank" rel="noopener noreferrer">Google Formulier</a>
+                </li>
+                <li>
+                    <strong>01/07 - 01/10</strong>
+                    <a class="event-link" href="https://raak.gijhof.be/pdf/fietszoektocht_2025.pdf" target="_blank" rel="noopener noreferrer">Fietszoektocht</a>
+                </li>
+            </ul>
+        </section>
+        <p class="uitpas-note">
+            Houders van een UiTPAS met kansentarief hebben voordeel bij Raak Gijzegem-Hofstade.
+        </p>
+    </div>
+`;
 
 
     const kalenderInhoud = `
 <div class="kalender-section">
-  <h2 class="kalender-titel">KWB jaarprogramma 2024</h2>
+  <h2 class="kalender-titel">Raak jaarprogramma 2025</h2>
   <hr>
 
   <table class="kalender-tabel" cellpadding="0" cellspacing="0" width="534">
@@ -68,79 +73,78 @@ document.addEventListener('DOMContentLoaded', () => {
     </colgroup>
     <tbody>
       <tr><th colspan="2">januari</th></tr>
-      <tr><td>1 &ndash; 7 januari</td><td><a href="http://kwb.gijhof.be/pdf/griezeltocht_2023.pdf">Winterse griezeltocht</a></td></tr>
-      <tr><td>13 januari</td><td><a href="http://kwb.gijhof.be/pdf/nieuwjaarsreceptie_2024.pdf">Nieuwjaarsreceptie</a></td></tr>
-      <tr><td>26 januari</td><td><a href="http://kwb.gijhof.be/pdf/belotten_2024.pdf">Belotting</a></td></tr>
-      <tr><td>30 jan &ndash; 4 feb</td><td><a href="http://kwb.gijhof.be/pdf/shortski_2024.pdf">Shortski in Zillertal (Oostenrijk)</a></td></tr>
+      <tr><td>1&ndash;5 januari</td><td><a href="https://raak.gijhof.be/pdf/griezeltocht_2024.pdf">Winterse griezeltocht</a></td></tr>
+      <tr><td>12 januari</td><td><a href="https://raak.gijhof.be/pdf/nieuwjaarsreceptie_2025.pdf">Nieuwjaarsreceptie</a></td></tr>
+      <tr><td>16&ndash;21 januari</td><td><a href="https://raak.gijhof.be/pdf/shortski_2025.pdf">Shortski in Zillertal (Oostenrijk)</a></td></tr>
+      <tr><td>24 januari</td><td><a href="https://raak.gijhof.be/pdf/belotten_2025.pdf">Belotting</a></td></tr>
 
       <tr><th colspan="2">februari</th></tr>
-      <tr><td>2 februari</td><td><a href="http://kwb.gijhof.be/pdf/initiatie_canasta_en_belotten_2024.pdf">Initiatie canasta en belotten</a></td></tr>
-      <tr><td>24 februari</td><td><a href="http://kwb.gijhof.be/pdf/comedy_2024.pdf">Comedyavond met o.a. Raf Coppens</a></td></tr>
+      <tr><td>5 februari</td><td><a href="https://raak.gijhof.be/pdf/bedrijsbezoek_ilva_2025.pdf">Bedrijfsbezoek ILVA</a></td></tr>
+      <tr><td>9 februari</td><td><a href="https://raak.gijhof.be/pdf/raak_praatcaf%C3%A9_2025.pdf">Raak praatcaf&eacute;</a></td></tr>
+      <tr><td>22 februari</td><td><a href="https://raak.gijhof.be/pdf/comedy_2025.pdf">Comedyavond</a></td></tr>
+      <tr><td>28 februari</td><td><a href="https://raak.gijhof.be/pdf/belotten_2025.pdf">Belotting</a></td></tr>
 
       <tr><th colspan="2">maart</th></tr>
-      <tr><td>1 maart</td><td><a href="http://kwb.gijhof.be/pdf/belotten_2024.pdf">Belotting</a></td></tr>
-      <tr><td>9 maart</td><td><a href="http://kwb.gijhof.be/pdf/blokjesfestival_en_ciao_italia_pizza_2024.pdf">Blokjes- en ciao Italia pizzafestival</a></td></tr>
-      <tr><td>17 maart</td><td><a href="http://kwb.gijhof.be/pdf/koffie_barista_2024.pdf">Koffie Barista</a></td></tr>
-      <tr><td>22 maart</td><td><a href="http://kwb.gijhof.be/pdf/bedrijfsbezoek_brouwerij_dilewyns_2024.pdf">Bedrijfsbezoek brouwerij Dilewyns</a></td></tr>
-      <tr><td>29 maart</td><td><a href="http://kwb.gijhof.be/pdf/belotten_2024.pdf">Belotting</a></td></tr>
+      <tr><td>15 maart</td><td><a href="https://raak.gijhof.be/pdf/blokjesfestival_en_ciao_italia_pizzafestival_2025.pdf">Blokjes- en Ciao Italia pizzafestival</a></td></tr>
+      <tr><td>16 maart</td><td><a href="https://raak.gijhof.be/pdf/raak_praatcaf%C3%A9_2025.pdf">Raak praatcaf&eacute;</a></td></tr>
+      <tr><td>21 maart</td><td><a href="https://raak.gijhof.be/pdf/belotten_2025.pdf">Belotting</a></td></tr>
+      <tr><td>29 maart</td><td><a href="https://raak.gijhof.be/pdf/kaas-bier-en_wijnavond_2025.pdf">Kaas-, bier- en wijnavond</a></td></tr>
 
       <tr><th colspan="2">april</th></tr>
-      <tr><td>1 april</td><td><a href="http://kwb.gijhof.be/pdf/paaszoektocht_2024.pdf">Paaszoektocht</a></td></tr>
-      <tr><td>7 april</td><td><a href="http://kwb.gijhof.be/pdf/dauwtrip_2024.pdf">Dauwtrip</a></td></tr>
-      <tr><td>21 april</td><td><a href="http://kwb.gijhof.be/pdf/stadswandeling_dendermonde_2024.pdf">Stadswandeling Dendermonde</a></td></tr>
+      <tr><td>13 april</td><td><a href="https://raak.gijhof.be/pdf/dauwtrip_2025.pdf">Dauwtrip</a></td></tr>
+      <tr><td>21 april</td><td><a href="https://raak.gijhof.be/pdf/paaszoektocht_2025.pdf">Paaszoektocht</a></td></tr>
+      <tr><td>27 april</td><td><a href="https://raak.gijhof.be/pdf/praatcafe_04-05_2025.pdf">Praatcaf&eacute;</a></td></tr>
 
       <tr><th colspan="2">mei</th></tr>
-      <tr><td>18 mei</td><td><a href="http://kwb.gijhof.be/pdf/lightning_strikes_2024.pdf">Lightning strikes (lasershooten)</a></td></tr>
+      <tr><td>25 mei</td><td><a href="https://raak.gijhof.be/pdf/praatcafe_04-05_2025.pdf">Praatcaf&eacute;</a></td></tr>
+      <tr><td>31 mei</td><td><a href="https://raak.gijhof.be/pdf/buitenspeelnamiddag_2025.pdf">Buitenspeelnamiddag (bumperball en cornhole)</a></td></tr>
 
       <tr><th colspan="2">juni</th></tr>
-      <tr><td>2 juni</td><td><a href="http://kwb.gijhof.be/pdf/daguitstap_planckendael_2024.pdf">Daguitstap Planckendael</a></td></tr>
-      <tr><td>8&ndash;9 juni</td><td><a href="http://kwb.gijhof.be/pdf/eetfestijn_juni_2024.pdf">Verkiezings-eetfestijn</a></td></tr>
-      <tr><td>15 juni</td><td><a href="http://kwb.gijhof.be/pdf/petanque_2024.pdf">Petanque</a></td></tr>
-      <tr><td>30 juni</td><td><a href="http://kwb.gijhof.be/pdf/garageverkoop_2024.pdf">Garageverkoop in Gijzegem</a></td></tr>
+      <tr><td>21 juni</td><td><a href="https://raak.gijhof.be/pdf/op_stap_in_brussel_2025.pdf">Op stap in Brussel</a></td></tr>
+      <tr><td>28 juni</td><td><a href="https://raak.gijhof.be/pdf/bbq_2025%20.pdf">Barbecue</a></td></tr>
 
       <tr><th colspan="2">juli</th></tr>
-      <tr><td>juli &ndash; oktober</td><td><a href="http://kwb.gijhof.be/pdf/fietszoektocht_2024.pdf">Fietszoektocht</a> - Antwoorden - Winnaars</td></tr>
+      <tr><td>juli &ndash; september</td><td><a href="https://raak.gijhof.be/pdf/fietszoektocht_2025.pdf">Fietszoektocht</a> - Antwoorden - Winnaars</td></tr>
 
       <tr><th colspan="2">augustus</th></tr>
-      <tr><td>4 augustus</td><td>Jaak Vereecken Classic</td></tr>
+      <tr><td>10 augustus</td><td>Jaak Vereecken Classic</td></tr>
 
       <tr><th colspan="2">september</th></tr>
-      <tr><td>8 of 9 september</td><td>Motordag</td></tr>
-      <tr><td>28&ndash;29 september</td><td>Levensloop</td></tr>
+      <tr><td>14 september</td><td>Motordag - GPX bestand - Kaartje</td></tr>
+      <tr><td>27&ndash;28 september</td><td>Levensloop</td></tr>
 
       <tr><th colspan="2">oktober</th></tr>
-      <tr><td>4&ndash;6 oktober</td><td>Weekendreis Normandi&euml; (Frankrijk)</td></tr>
-      <tr><td>12-13 oktober</td><td>Verkiezings-eetfestijn</td></tr>
-      <tr><td>18 oktober</td><td><a href="http://kwb.gijhof.be/pdf/belotten_2024.pdf">Belotting</a></td></tr>
+      <tr><td>17 oktober</td><td><a href="https://raak.gijhof.be/pdf/belotten_2025.pdf">Belotting</a></td></tr>
       <tr><td>25 oktober</td><td>Dartstornooi</td></tr>
-      <tr><td>27 oktober</td><td>Herfstwandeling</td></tr>
+      <tr><td>26 oktober</td><td>Herfstwandeling</td></tr>
 
       <tr><th colspan="2">november</th></tr>
-      <tr><td>3 november</td><td>Sint-Maartenfeest</td></tr>
-      <tr><td>15 november</td><td><a href="http://kwb.gijhof.be/pdf/belotten_2024.pdf">Belotting</a></td></tr>
-      <tr><td>27 november</td><td>Kookles feestelijke hapjes</td></tr>
-      <tr><td>30 november</td><td>Gezinsquiz - Uitslag - Winnaars</td></tr>
+      <tr><td>9 november</td><td>Sint-Maartenfeest</td></tr>
+      <tr><td>15 november</td><td>Belgische avond</td></tr>
+      <tr><td>21 november</td><td>Belotting</td></tr>
+      <tr><td>29 november</td><td>Gezinsquiz - Uitslag - Winnaars</td></tr>
 
       <tr><th colspan="2">december</th></tr>
-      <tr><td>6 december</td><td>Caf&eacute; Mang&eacute;</td></tr>
-      <tr><td>27 december</td><td><a href="http://kwb.gijhof.be/pdf/belotten_2024.pdf">Belotting</a></td></tr>
-     
-
+      <tr><td>12 december</td><td><a href="https://raak.gijhof.be/pdf/belotten_2025.pdf">Belotting</a></td></tr>
+      <tr><td>20 dec &ndash; 4 jan</td><td><a href="https://raak.gijhof.be/pdf/griezeltocht_2024.pdf">Griezeltocht</a></td></tr>
+      <tr><td>28 december</td><td>Griezeltocht + animatie</td></tr>
     </tbody>
   </table>
 
   <p class="kalender-info">
-    * Adres: Dekkersweg 4, Gijzegem<br>
-    Volleybal: elke dinsdag van 20u&ndash;22u in sporthal Sint-Vincentiusinstituut<br>
-    Competitievolleybal: om de 2 weken thuis op zondag om 10u<br>
-    Meer info: <a href="http://volley.vandemeerssche.com/">http://volley.vandemeerssche.com</a>
-  </p>
+  * adres Dekkersweg 4 te Gijzegem<br>
+  Volleybal iedere dinsdag van 20u tot 22u in de sporthal van het Sint-Vincentiusinstituut te Gijzegem.<br>
+  Competitievolleybal KWB-competitie regio Denderland: om de 2 weken speelt onze competitieploeg thuis vanaf 10u zondagvoormiddag.<br>
+  Meer info op <a href="http://volley.vandemeerssche.com/">http://volley.vandemeerssche.com</a><br><br>
+</p>
 </div>
 `;
 
+
+
     const vorigekalenderInhoud = `
 <div class="kalender-section">
-  <h2 class="kalender-titel">KWB jaarprogramma 2023</h2>
+  <h2 class="kalender-titel">Raak jaarprogramma 2024</h2>
   <hr>
 
   <table class="kalender-tabel" cellpadding="0" cellspacing="0" width="534">
@@ -150,62 +154,75 @@ document.addEventListener('DOMContentLoaded', () => {
     </colgroup>
     <tbody>
       <tr><th colspan="2">januari</th></tr>
-      <tr><td>januari &ndash; april</td><td>Volleybal, op zondag competitie en op dinsdag recreatie</td></tr>
-      <tr><td>7 januari</td><td><a href="http://kwb.gijhof.be/pdf/nieuwjaarsreceptie_2023.pdf">Nieuwjaarsreceptie</a></td></tr>
-      <tr><td>19 &ndash; 24 januari</td><td><a href="http://kwb.gijhof.be/pdf/shortski_2023.pdf">Shortski in Kronplatz (Itali&euml;)</a></td></tr>
-      <tr><td>27 januari</td><td><a href="http://kwb.gijhof.be/pdf/belotten_voorjaar_2023.pdf">Initatie belotten</a></td></tr>
+      <tr><td>1-7 januari</td><td><a href="https://raak.gijhof.be/pdf/griezeltocht_2023.pdf">Winterse griezeltocht</a></td></tr>
+      <tr><td>13 januari</td><td><a href="https://raak.gijhof.be/pdf/nieuwjaarsreceptie_2024.pdf">Nieuwjaarsreceptie</a></td></tr>
+      <tr><td>26 januari</td><td><a href="https://raak.gijhof.be/pdf/belotten_2024.pdf">Belotting</a></td></tr>
+      <tr><td>30 jan - 4 feb</td><td><a href="https://raak.gijhof.be/pdf/shortski_2024.pdf">Shortski in Zillertal (Oostenrijk)</a></td></tr>
 
       <tr><th colspan="2">februari</th></tr>
-      <tr><td>10 februari</td><td><a href="http://kwb.gijhof.be/pdf/belotten_voorjaar_2023.pdf">Belotting</a></td></tr>
+      <tr><td>2 februari</td><td><a href="https://raak.gijhof.be/pdf/initiatie_canasta_en_belotten_2024.pdf">Initiatie canasta en belotten</a></td></tr>
+      <tr><td>24 februari</td><td><a href="https://raak.gijhof.be/pdf/comedy_2024.pdf">Comedy avond met o.a. Raf Coppens</a></td></tr>
 
       <tr><th colspan="2">maart</th></tr>
-      <tr><td>11 maart</td><td><a href="http://kwb.gijhof.be/pdf/kaas_wijn_bieravond_2023.pdf">Kaas- wijn- en bieravond</a></td></tr>
-      <tr><td>24 maart</td><td><a href="http://kwb.gijhof.be/pdf/belotten_voorjaar_2023.pdf">Belotting</a></td></tr>
-      <tr><td>25 maart</td><td><a href="http://kwb.gijhof.be/pdf/bowling_2023.pdf">Bowling</a></td></tr>
+      <tr><td>1 maart</td><td><a href="https://raak.gijhof.be/pdf/belotten_2024.pdf">Belotting</a></td></tr>
+      <tr><td>9 maart</td><td><a href="https://raak.gijhof.be/pdf/blokjesfestival_en_ciao_italia_pizza_2024.pdf">Blokjes- en Ciao Italia pizzafestival</a></td></tr>
+      <tr><td>17 maart</td><td><a href="https://raak.gijhof.be/pdf/koffie_barista_2024.pdf">Koffie Barista</a></td></tr>
+      <tr><td>22 maart</td><td><a href="https://raak.gijhof.be/pdf/bedrijfsbezoek_brouwerij_dilewyns_2024.pdf">Bedrijfsbezoek brouwerij Dilewyns</a></td></tr>
+      <tr><td>29 maart</td><td><a href="https://raak.gijhof.be/pdf/belotten_2024.pdf">Belotting</a></td></tr>
 
       <tr><th colspan="2">april</th></tr>
-      <tr><td>10 april</td><td><a href="http://kwb.gijhof.be/pdf/paaszoektocht_2023.pdf">Paaswandeling</a></td></tr>
-      <tr><td>14 april</td><td><a href="http://kwb.gijhof.be/pdf/musical_red_star_line_2023.pdf">Musical Red Star Line</a></td></tr>
-      <tr><td>16 april</td><td><a href="http://kwb.gijhof.be/pdf/dauwtrip_2023.pdf">Dauwtrip</a></td></tr>
-      <tr><td>19 april</td><td><a href="http://kwb.gijhof.be/pdf/anesthesie_future_from_the_past_2023.pdf">Anesthesie: Future from the past door dokter Bouchez</a></td></tr>
-      <tr><td>21 april</td><td><a href="http://kwb.gijhof.be/pdf/belotten_voorjaar_2023.pdf">Belotting</a></td></tr>
-      <tr><td>29 april</td><td><a href="http://kwb.gijhof.be/pdf/laserbattle_2023.pdf">Lasersbattle</a> + <a href="http://kwb.gijhof.be/pdf/stadswandeling_2023.pdf">stadswandeling in Aalst</a></td></tr>
+      <tr><td>1 april</td><td><a href="https://raak.gijhof.be/pdf/paaszoektocht_2024.pdf">Paaszoektocht</a></td></tr>
+      <tr><td>7 april</td><td><a href="https://raak.gijhof.be/pdf/dauwtrip_2024.pdf">Dauwtrip</a></td></tr>
+      <tr><td>21 april</td><td><a href="https://raak.gijhof.be/pdf/stadswandeling_dendermonde_2024.pdf">Stadswandeling Dendermonde</a></td></tr>
 
       <tr><th colspan="2">mei</th></tr>
-      <tr><td>13 mei</td><td><a href="http://kwb.gijhof.be/pdf/blokjesfestival_2023.pdf">Blokjes-</a> en <a href="http://kwb.gijhof.be/pdf/ciao_italia_2023.pdf">Ciao Italia pizzafestival</a></td></tr>
-      <tr><td>20 mei</td><td><a href="http://kwb.gijhof.be/pdf/grastoernooi_2023.pdf">Grastoernooi volleybal</a></td></tr>
+      <tr><td>18 mei</td><td><a href="https://raak.gijhof.be/pdf/lightning_strikes_2024.pdf">Lightning strikes (lasershooten)</a></td></tr>
 
       <tr><th colspan="2">juni</th></tr>
-      <tr><td>10 juni</td><td><a href="http://kwb.gijhof.be/pdf/bbq_2023.pdf">Zomer BBQ</a></td></tr>
-      <tr><td>17 juni</td><td><a href="http://kwb.gijhof.be/pdf/petanque_2023.pdf">Petanquetornooi</a></td></tr>
+      <tr><td>2 juni</td><td><a href="https://raak.gijhof.be/pdf/daguitstap_planckendael_2024.pdf">Daguitstap Planckendael</a></td></tr>
+      <tr><td>8-9 juni</td><td><a href="https://raak.gijhof.be/pdf/eetfestijn_juni_2024.pdf">Verkiezings-eetfestijn</a></td></tr>
+      <tr><td>15 juni</td><td><a href="https://raak.gijhof.be/pdf/petanque_2024.pdf">Petanque</a></td></tr>
+      <tr><td>30 juni</td><td><a href="https://raak.gijhof.be/pdf/garageverkoop_2024.pdf">Garageverkoop in Gijzegem</a></td></tr>
 
       <tr><th colspan="2">juli</th></tr>
-      <tr><td>juli &ndash; oktober</td><td><a href="http://kwb.gijhof.be/pdf/fietszoektocht_2023.pdf">Fietszoektocht</a> - <a href="http://kwb.gijhof.be/pdf/antwoorden_fietszoektocht_2023.pdf">Antwoorden</a> - <a href="http://kwb.gijhof.be/pdf/winnaars_fietszoektocht_2023.pdf">Winnaars</a></td></tr>
-      <tr><td>2 juli</td><td><a href="http://kwb.gijhof.be/pdf/garageverkoop_2023.pdf">Garageverkoop in Gijzegem</a> <a href="http://kwb.gijhof.be/pdf/garageverkoop_deelnemers_2023_v2.pdf">plan met deelnemers</a></td></tr>
+      <tr><td>juli - oktober</td><td>
+        <a href="https://raak.gijhof.be/pdf/fietszoektocht_2024.pdf">Fietszoektocht</a> -
+        <a href="https://raak.gijhof.be/pdf/antwoorden_fietszoektocht_2024.pdf">Antwoorden</a> -
+        <a href="https://raak.gijhof.be/pdf/winnaars_fietszoektocht_2024.pdf">Winnaars</a>
+      </td></tr>
 
       <tr><th colspan="2">augustus</th></tr>
-      <tr><td>6 augustus</td><td><a href="http://kwb.gijhof.be/pdf/jvc_2023.pdf">Jaak Vereecken Classic</a></td></tr>
+      <tr><td>4 augustus</td><td><a href="https://raak.gijhof.be/pdf/jvc_2024.pdf">Jaak Vereecken Classic</a></td></tr>
 
       <tr><th colspan="2">september</th></tr>
-      <tr><td>10 september</td><td><a href="http://kwb.gijhof.be/pdf/motordag_2023.pdf">Motordag</a></td></tr>
-      <tr><td>23 &ndash; 24 september</td><td><a href="http://kwb.gijhof.be/pdf/levensloop_2023.pdf">Levensloop</a></td></tr>
+      <tr><td>8 of 9 september</td><td>
+        <a href="https://raak.gijhof.be/pdf/motordag_2024.pdf">Motordag</a> -
+        <a href="https://raak.gijhof.be/pdf/motordag_teaser_2024.pdf">Teaser</a> -
+        <a href="https://raak.gijhof.be/images/raak_motordag_2024-0904_ILi_220_km.gpx">GPX bestand</a> -
+        <a href="https://raak.gijhof.be/images/raak_motordag_2024_220_km.jpg">Kaartje</a>
+      </td></tr>
+      <tr><td>28-29 september</td><td><a href="https://raak.gijhof.be/pdf/levensloop_2024.pdf">Levensloop</a></td></tr>
 
       <tr><th colspan="2">oktober</th></tr>
-      <tr><td>1 oktober</td><td>Daguitstap</td></tr>
-      <tr><td>6 oktober</td><td><a href="http://kwb.gijhof.be/pdf/darts_2023.pdf">Dartstoernooi</a></td></tr>
-      <tr><td>20 oktober</td><td><a href="http://kwb.gijhof.be/pdf/belotten_najaar_2023.pdf">Belotting</a></td></tr>
-      <tr><td>22 oktober</td><td><a href="http://kwb.gijhof.be/pdf/herfstwandeling_2023.pdf">Herfstwandeling</a></td></tr>
+      <tr><td>4-6 oktober</td><td><a href="https://raak.gijhof.be/pdf/weekendreis_2024.pdf">Weekendreis Normandi&euml; (Frankrijk)</a></td></tr>
+      <tr><td>12-13 oktober</td><td><a href="https://raak.gijhof.be/pdf/eetfestijn_oktober_2024.pdf">Verkiezings-eetfestijn</a></td></tr>
+      <tr><td>18 oktober</td><td><a href="https://raak.gijhof.be/pdf/belotten_najaar_2024.pdf">Belotting</a></td></tr>
+      <tr><td>25 oktober</td><td><a href="https://raak.gijhof.be/pdf/dartstornooi_2024.pdf">Dartstornooi</a></td></tr>
+      <tr><td>27 oktober</td><td><a href="https://raak.gijhof.be/pdf/herfstwandeling_2024.pdf">Herfstwandeling</a></td></tr>
 
       <tr><th colspan="2">november</th></tr>
-      <tr><td>5 november</td><td><a href="http://kwb.gijhof.be/pdf/sint_2023.pdf">Sint-Maartenfeest</a></td></tr>
-      <tr><td>17 november</td><td><a href="http://kwb.gijhof.be/pdf/belotten_najaar_2023.pdf">Belotting</a></td></tr>
-      <tr><td>25 november</td><td><a href="http://kwb.gijhof.be/pdf/gezinsquiz_2023.pdf">Gezinsquiz</a> - <a href="http://kwb.gijhof.be/images/uitslag_gezinsquiz_2023.jpg">Uitslag</a> - <a href="http://kwb.gijhof.be/images/quiz_2023_winnaars.jpg">Winnaars</a></td></tr>
+      <tr><td>3 november</td><td><a href="https://raak.gijhof.be/pdf/sint_2024.pdf">Sint-Maartenfeest</a></td></tr>
+      <tr><td>15 november</td><td><a href="https://raak.gijhof.be/pdf/belotten_najaar_2024.pdf">Belotting</a></td></tr>
+      <tr><td>24 november</td><td><a href="https://raak.gijhof.be/pdf/raak_praatcaf&eacute;_20241124.pdf">Raak praatcaf&eacute;</a></td></tr>
+      <tr><td>30 november</td><td>
+        <a href="https://raak.gijhof.be/pdf/gezinsquiz_2024.pdf">Gezinsquiz</a> - Uitslag - Winnaars
+      </td></tr>
 
       <tr><th colspan="2">december</th></tr>
-      <tr><td>1 december</td><td><a href="http://kwb.gijhof.be/pdf/spaghettifestijn_2023.pdf">Spaghetti-avond</a></td></tr>
-      <tr><td>9 december</td><td><a href="http://kwb.gijhof.be/pdf/griekse_avond_2023.pdf">Griekse avond</a></td></tr>
-      <tr><td>15 december</td><td><a href="http://kwb.gijhof.be/pdf/belotten_najaar_2023.pdf">Belotting</a></td></tr>
-      <tr><td>23 dec &ndash; 7 jan</td><td><a href="http://kwb.gijhof.be/pdf/griezeltocht_2023.pdf">Griezeltocht</a></td></tr>
+      <tr><td>6 december</td><td><a href="https://raak.gijhof.be/pdf/caf&eacute;_mang&eacute;_2024.pdf">Caf&eacute; Mang&eacute;</a></td></tr>
+      <tr><td>13 december</td><td><a href="https://raak.gijhof.be/pdf/belotten_najaar_2024.pdf">Belotting</a></td></tr>
+      <tr><td>21 dec - 5 jan</td><td><a href="https://raak.gijhof.be/pdf/griezeltocht_2024.pdf">Griezeltocht</a></td></tr>
+      <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
     </tbody>
   </table>
 
@@ -217,7 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
   </p>
 </div>
 `;
-
 
     const terugblikInhoud = `
 <p class="terugblik-titel">Terugblik</p>
@@ -340,8 +356,8 @@ document.addEventListener('DOMContentLoaded', () => {
       Wens je met KWB <span class="plaatsnaam">Gijzegem-Hofstade</span> in contact te treden 
       (vragen, opmerkingen, suggesties...), neem contact op met onze voorzitter, 
       Guido Bruyland, of stuur een mail naar:
-      <a href="mailto:guido.bruyland@kwbgijzegem.be" class="email-link">
-        guido.bruyland@kwbgijzegem.be
+      <a href="mailto:info@raakgijzegem.be" class="email-link">
+        info@raakgijzegem.be
       </a>
     </p>
   </div>
@@ -599,8 +615,8 @@ document.addEventListener('DOMContentLoaded', () => {
   <p class="privacy-text">
   Als je je gegevens wil inkijken of verbeteren, kan dit steeds online via
   <a href="https://korpus.kwb.be/" target="_blank" rel="noopener noreferrer">https://korpus.kwb.be</a>
-  of via mail aan Guido Bruyland (
-  <a href="mailto:guido.bruyland@kwbgijzegem.be" class="email-link">guido.bruyland@kwbgijzegem.be</a>).
+  of via mail (
+  <a href="mailto:info@raakgijzegem.be" class="email-link">info@raakgijzegem.be</a>).
   </p>
 
 
